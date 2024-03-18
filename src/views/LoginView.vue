@@ -2,7 +2,7 @@
 <script setup>
 import { ref } from "vue";
 import axios from "axios";
-import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
+import 'bootstrap/dist/css/bootstrap.min.css'; 
 
 const Username = ref('');
 const email = ref('');
@@ -16,11 +16,11 @@ const login = async () => {
             email: email.value,
             password: password.value
         });
-        console.log(response.data); // Log response data if needed
+        console.log(response.data); 
         alert('logged in succesfylly');
         window.location.href = '/about';
        } catch (error) {
-        console.error(error); // Log any errors
+        console.error(error); 
     }
 }
 </script>
@@ -43,9 +43,13 @@ const login = async () => {
             <div class="form-group">
                 <button class="btn btn-primary" type="submit">login</button>
             </div>
+            <div>
+              <router-link to="/forgot-password">Forgot password?</router-link>
+
+            </div>
         </div>
     </form>
-    <!-- <p>{{ Username }}</p> -->
+   
 </div>
 </template>
 

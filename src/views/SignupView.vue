@@ -2,7 +2,7 @@
   <script setup>
 import { ref } from "vue";
 import axios from "axios";
-import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Username = ref('');
 const email = ref('');
@@ -16,9 +16,9 @@ const signup = async () => {
             email: email.value,
             password: password.value
         });
-        console.log(response.data); // Log response data if needed
+        console.log(response.data); 
     } catch (error) {
-        console.error(error); // Log any errors
+        console.error(error); 
     }
 }
 </script>

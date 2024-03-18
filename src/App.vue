@@ -11,6 +11,7 @@
   <RouterLink class="nav-item" to="">Contact us</RouterLink>
   <RouterLink class="nav-item" to="/login">Login</RouterLink>
   <RouterLink class="nav-item" to="/signup">SignUp</RouterLink>
+  <!-- <RouterLink to="/forgot-password">forgot Password</RouterLink> -->
 
   
 </div>
